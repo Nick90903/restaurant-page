@@ -6,8 +6,6 @@ import {drawMenu} from './draw-Menu';
 
 function drawHeader() {
     const container = document.querySelector('.content');
-    const content = document.createElement('div');
-    content.classList.add('body-Content');
     console.log(container);
 
     //creates all header elements
@@ -53,8 +51,12 @@ function drawHeader() {
     
     header_Container.appendChild(button_Container);
     container.appendChild(header_Container);
-    container.appendChild(content);
+}
+
+export function clearScreen() {
+    const temp = document.querySelectorAll('.container');
+    if(temp != null){temp.forEach(element => {element.remove()})}
 }
 
 drawHeader();
-drawMain();
+drawMenu();

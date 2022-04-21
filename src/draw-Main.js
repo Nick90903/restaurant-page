@@ -1,9 +1,9 @@
+import { clearScreen } from ".";
 import { drawFooter } from "./draw-Footer";
 
 const drawMain = () => {
     console.log('Home Clicked');
-    const temp = document.querySelector('.body-Content');
-    if(temp != null){temp.remove()}
+    clearScreen();
     
     const main = document.querySelector('.content');
     const container = document.createElement('div');
