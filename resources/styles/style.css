@@ -66,10 +66,6 @@ body {
     min-height: 630px;
 }
 
-.pizza-Cook {
-    width: 80%;
-}
-
 .body-Content {
     display: flex;
     flex-direction: column;
@@ -84,6 +80,12 @@ body {
     font-size: 20px;
     color: rgb(255, 255, 255);
 }
+
+.pizza-Cook {
+    width: 80%;
+}
+
+/* Footer Styling */
 
 .footer-Container {
     background-color: var(--Grey-Background);
