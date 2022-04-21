@@ -6,6 +6,8 @@ const drawMain = () => {
     if(temp != null){temp.remove()}
     
     const main = document.querySelector('.content');
+    const container = document.createElement('div');
+    container.classList.add('container');
 
     const content = document.createElement('div');
     content.classList.add('body-Content');
@@ -20,7 +22,7 @@ const drawMain = () => {
 
     const pizza_Cook = document.createElement('img');
     pizza_Cook.classList.add('pizza-Cook');
-    pizza_Cook.src = ('dist/resources/images/pizzacook.jpg');
+    pizza_Cook.src = ('resources/images/pizzacook.jpg');
 
     const CTA = document.createElement('p');
     CTA.classList.add('CTA');
@@ -30,8 +32,9 @@ const drawMain = () => {
     content.appendChild(founded);
     content.appendChild(pizza_Cook);
     content.appendChild(CTA);
-    main.appendChild(content);
-    main.appendChild(drawFooter());
+    container.appendChild(content);
+    container.appendChild(drawFooter());
+    main.appendChild(container);
 
 }
 
