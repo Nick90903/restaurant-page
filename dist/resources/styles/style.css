@@ -1,0 +1,90 @@
+html { 
+    background: url(../images/pizza.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    --Grey-Background: rgba(0, 0, 0, 0.664);
+  }
+
+body {
+    margin: 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-Container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Grey-Background);
+    padding-bottom: 50px;
+}
+
+.button-Container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-Container > button {
+    width: 110px;
+    height: 25px;
+    border: 0;
+    background-color: rgba(128, 128, 128, 0);
+    font-size: 17px;
+    color: white;
+
+}
+
+.button-Container > button:hover {
+    border: 3px solid rgba(128, 128, 128, 0);
+    border-bottom-color: red;
+}
+
+.title {
+    color: white;
+}
+
+.pizza-Cook {
+    width: 80%;
+}
+
+.body-Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(420px, 50vw, 570px);
+    height: 480px;
+    margin-left: calc(50vw - calc(clamp(420px, 50vw, 570px)/2));
+    margin-top: 50px;
+    background-color: var(--Grey-Background);
+}
+
+.body-Content > p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.footer-Container {
+    background-color: var(--Grey-Background);
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-Container > p {
+    color: white;
+}
+
+.footer-Container > p > a {
+    color: white;
+}

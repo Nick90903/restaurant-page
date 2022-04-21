@@ -15,6 +15,14 @@ function drawHeader() {
     const home_Button = document.createElement('button');
     const menu_Button = document.createElement('button');
     const contact_Button = document.createElement('button');
+    const button_Container = document.createElement('div');
+    button_Container.classList.add('button-Container');
+
+    const title = document.createElement('h2');
+
+    title.textContent = ('Tom\'s Pizza Pen');
+    title.classList.add('title');
+    header_Container.appendChild(title);
 
     header_Container.classList.add('header-Container');
 
@@ -24,7 +32,7 @@ function drawHeader() {
     home_Button.addEventListener('click', function() {
         drawMain();
     })
-    header_Container.appendChild(home_Button);    
+    button_Container.appendChild(home_Button);    
 
     //Set up menu button and appends
     menu_Button.textContent = ('Menu');
@@ -32,7 +40,7 @@ function drawHeader() {
     menu_Button.addEventListener('click', function () {
         drawMenu();
     })
-    header_Container.appendChild(menu_Button);
+    button_Container.appendChild(menu_Button);
 
     //Sets up contact us button and appends
     contact_Button.textContent = ('Contact Us');
@@ -40,11 +48,13 @@ function drawHeader() {
     contact_Button.addEventListener('click', function() {
         drawContact();
     })
-    header_Container.appendChild(contact_Button);
+    button_Container.appendChild(contact_Button);
     console.log(header_Container);
-
+    
+    header_Container.appendChild(button_Container);
     container.appendChild(header_Container);
     container.appendChild(content);
 }
 
 drawHeader();
+drawMain();
