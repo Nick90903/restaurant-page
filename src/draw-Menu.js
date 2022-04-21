@@ -2,12 +2,13 @@ import { clearScreen } from ".";
 import { drawFooter } from "./draw-Footer";
 
 const drawMenu = () => {
-    clearScreen('menu-Container');
+    clearScreen();
     console.log('drawMenu Clicked');
 
     const main = document.querySelector('.content');
     const container = document.createElement('div');
     container.classList.add('menu-Container');
+    container.classList.add('toRemove');
 
     const content = document.createElement('div');
     content.classList.add('body-Content');

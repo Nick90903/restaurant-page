@@ -1,5 +1,32 @@
-const drawContact = () => {
+import { clearScreen } from ".";
+import { drawFooter } from "./draw-Footer";
 
+const drawContact = () => {
+    clearScreen();
+
+    const main = document.querySelector('.content');
+    const container = document.createElement('div');
+    container.classList.add('contact-Container');
+    container.classList.add('toRemove');
+
+    const content = document.createElement('div');
+    content.classList.add('body-Content');
+
+    const phone = document.createElement('h3');
+    phone.textContent = ('Phone Number: (810)-555-9350');
+    const email = document.createElement('h3');
+    email.textContent = ('PizzaPensPizza@PizzaPen.Pen');
+    const address = document.createElement('h3');
+    address.textContent = ('53 Main st Davison, Texas');
+
+    content.appendChild(phone);
+    content.appendChild(email);
+    content.appendChild(address);
+
+    container.appendChild(content);
+    container.appendChild(drawFooter());
+
+    main.appendChild(container);
 }
 
 export {drawContact};

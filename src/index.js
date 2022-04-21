@@ -53,10 +53,10 @@ function drawHeader() {
     container.appendChild(header_Container);
 }
 
-export function clearScreen(name) {
-    const temp = document.querySelectorAll('.' + name);
+export function clearScreen() {
+    const temp = document.querySelectorAll('.toRemove');
     if(temp != null){temp.forEach(element => {element.remove()})}
 }
 
 drawHeader();
-drawMenu();
+drawContact();

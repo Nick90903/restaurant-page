@@ -3,11 +3,12 @@ import { drawFooter } from "./draw-Footer";
 
 const drawMain = () => {
     console.log('Home Clicked');
-    clearScreen('container');
+    clearScreen();
     
     const main = document.querySelector('.content');
     const container = document.createElement('div');
     container.classList.add('container');
+    container.classList.add('toRemove');
 
     const content = document.createElement('div');
     content.classList.add('body-Content');
