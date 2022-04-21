@@ -59,4 +59,4 @@ export function clearScreen() {
 }
 
 drawHeader();
-drawContact();
+drawMain();
