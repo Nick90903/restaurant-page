@@ -12,9 +12,17 @@ body {
     margin: 0px;
 }
 
+/* Whole Page */
+
 .content {
     display: flex;
     flex-direction: column;
+}
+
+/* Header Styling */
+
+.title {
+    color: white;
 }
 
 .header-Container {
@@ -48,9 +56,7 @@ body {
     border-bottom-color: red;
 }
 
-.title {
-    color: white;
-}
+/* Main Page */
 
 .container {
     height: calc(100vh - 142px);
