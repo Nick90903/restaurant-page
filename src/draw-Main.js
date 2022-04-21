@@ -3,7 +3,7 @@ import { drawFooter } from "./draw-Footer";
 
 const drawMain = () => {
     console.log('Home Clicked');
-    clearScreen();
+    clearScreen('container');
     
     const main = document.querySelector('.content');
     const container = document.createElement('div');

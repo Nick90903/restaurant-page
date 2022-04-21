@@ -53,8 +53,8 @@ function drawHeader() {
     container.appendChild(header_Container);
 }
 
-export function clearScreen() {
-    const temp = document.querySelectorAll('.container');
+export function clearScreen(name) {
+    const temp = document.querySelectorAll('.' + name);
     if(temp != null){temp.forEach(element => {element.remove()})}
 }
 
